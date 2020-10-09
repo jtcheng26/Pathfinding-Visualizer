@@ -1,0 +1,167 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #4488EE;
+}
+
+h1 {
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  height: 50px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+div {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+label {
+  color: white;
+}
+
+.btn {
+  height: 50px;
+  min-width: 50px;
+  font-size: 25px;
+  border: 5px solid #333333;
+  background-color: #DDDDDD;
+}
+
+.stats {
+  color: white;
+  font-size: 25px;
+  margin-left: 25px;
+}
+
+.cell {
+  position: relative;
+  border: 2px solid #F2F2F2;
+  height: 21px;
+  width: 21px;
+}
+
+.cell:hover {
+  background-color: #4488EE;
+}
+
+.start-hover:hover {
+  background-color: #44EE00;
+}
+
+.end-hover:hover {
+  background-color: #EE4400;
+}
+
+.deleted {
+  background-color: #333333;
+}
+
+.visiting {
+  background-color: #77EEFF;
+}
+
+.shrink-circle {
+  position: absolute;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  left: 3px;
+  top: 3px;
+  background-color: #77EEFF;
+  animation-name: visiting;
+  animation-duration: 0.5s;
+}
+
+.expand-circle {
+  position: absolute;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  left: 3px;
+  top: 3px;
+  background-color: #77EEFF;
+  animation-name: visiting;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+}
+
+@keyframes visiting {
+  0% {
+    height: 15px;
+    width: 15px;
+    left: 3px;
+    top: 3px;
+    border-radius: 50%;
+  }
+
+  50% {
+    height: 21px;
+    width: 21px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0%;
+  }
+
+  100% {
+    height: 15px;
+    width: 15px;
+    left: 3px;
+    top: 3px;
+    border-radius: 50%;
+  }
+}
+
+.shortest-path {
+  background-color: #FFAA44;
+}
+
+@media screen and (max-width: 1000px) {
+  #nav {
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #nav {
+    height: 150px;
+  }
+}
+
+#grid {
+  border: 2px solid #F2F2F2;
+  height: 1000px;
+  width: 1500px;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#cell-start {
+  background-color: #44EE00;
+}
+
+#cell-end {
+  background-color: #EE4400;
+}
+
+#choose-start {
+  background-color: #44EE00;
+}
+
+#choose-end {
+  background-color: #EE4400;
+}

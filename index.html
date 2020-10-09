@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grid Pathfinding Visualization</title>
+  <link rel="stylesheet" href="css/styles.css">
+  </link>
+</head>
+
+<body>
+  <header>
+    <h1>Grid Pathfinding Visualization</h1>
+  </header>
+  <hr>
+  <div id="nav-container">
+    <ul id="nav">
+      <button id="go" class="btn">Go</button>
+      <button id="reset" class="btn">Reset</button>
+      <button id="draw-erase" class="btn">Erase</button>
+      <button id="choose-start" class="btn">Choose Start</button>
+      <button id="choose-end" class="btn">Choose End</button>
+      <input type="radio" id="slow" name="speed" value="slow">
+      <label for="slow">Slow</label></input>
+      <input type="radio" id="medium" name="speed" value="med" checked>
+      <label for="medium">Medium</label></input>
+      <input type="radio" id="fast" name="speed" value="fast">
+      <label for="fast">Fast</label></input>
+      <input type="radio" id="instant" name="speed" value="instant">
+      <label for="instant">Instant</label>
+      </input>
+      <span id="visited" class="stats"></span>
+      <span id="distance" class="stats"></span>
+    </ul>
+  </div>
+  <div id="grid-container">
+    <div id="grid"></div>
+  </div>
+  <footer id="end" class="centered">
+    &copy 2020 Jeff Cheng <a href="https://github.com/jtcheng26" target="_blank">Github</a>
+  </footer>
+</body>
+<script src="js/index.js"></script>
+
+</html>
